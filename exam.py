@@ -58,3 +58,35 @@ fruits = ['Apple', 'Mango', 'Banana', 'Orange']
 for fruit in fruits:
     print(fruit)    
     
+# 8. Write a Python program to take marks as input and print A+ for marks >= 80, A for >= 70, B for >= 60, otherwise Fail.
+
+mrks = int(input("Enter your mrks: "))
+
+if mrks >= 80:
+    print("A+")
+elif mrks >= 70:
+    print("A")
+elif mrks >= 60:
+    print("B")
+else:
+    print("Fail")
+
+
+# 9. Write a Python program to take a number as input and print its multiplication table from 1 to 10.
+
+number = int(input("Enter number: "))
+
+for i in range(1, 11):
+    print(number, "x", i, "=", number * i) 
+    
+# 10. Given numbers = [10, 20, 30, 40, 50], write a Python program to print each number and then print the total sum.
+
+numbers = [10, 20, 30, 40, 50]
+
+totalSum = 0
+
+for number in numbers:
+    print(number)
+    totalSum = totalSum + number
+
+print("Sum =", totalSum)
